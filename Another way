@@ -1,0 +1,102 @@
+/*public class Student {
+    // Private fields for encapsulation
+    private String name;
+    private float gradeMath;
+    private float gradePhysics;
+
+    // Constructor to initialize the student's name and grades
+    public Student(String name, float gradeMath, float gradePhysics) {
+        this.name = name;
+        this.gradeMath = gradeMath;
+        this.gradePhysics = gradePhysics;
+    }
+
+    // Public method to get the student's name
+    public String getName() {
+        return name;
+    }
+
+    // Public method to get the Math grade
+    public float getGradeMath() {
+        return gradeMath;
+    }
+
+    // Public method to get the Physics grade
+    public float getGradePhysics() {
+        return gradePhysics;
+    }
+
+    // Public method to print the student's information
+    public void printStudentInfo() {
+        System.out.println("Student: " + name);
+        System.out.println("Math Grade: " + gradeMath);
+        System.out.println("Physics Grade: " + gradePhysics);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Create an array of Student objects
+        Student[] students = {
+            new Student("Jane", 40.5f, 20.7f),
+            new Student("Jon", 70.3f, 60.2f),
+            new Student("Stewart", 80.0f, 75.5f)
+        };
+
+        // Loop through and print each student's information
+        for (Student student : students) {
+            student.printStudentInfo();
+            System.out.println();
+        }
+    }
+}
+*/
+ // this is  the 3 way to solve
+/*public class StudentMarks {
+    public static void main(String[] args) {
+        // 2D array to store marks
+        int[][] marks = {
+            {40, 20}, // Jane's marks: Math, Physics
+            {70, 60}, // Jon's marks: Math, Physics
+            {80, 75}  // Stewart's marks: Math, Physics
+        };
+
+        // Array to store student names
+        String[] students = {"Jane", "Jon", "Stewart"};
+        // Array to store subject names
+        String[] subjects = {"Math", "Physics"};
+
+        // Loop through each student
+        for (int i = 0; i < marks.length; i++) {
+            System.out.println(students[i] + "'s marks:");
+            // Loop through each subject
+            for (int j = 0; j < marks[i].length; j++) {
+                System.out.println("  " + subjects[j] + ": " + marks[i][j]);
+            }
+        }
+    }
+}
+*/
+
+// this is  4 step using 2D array
+public class StudentMarks {
+    public static void main(String[] args) {
+        // 2D array to store marks
+        int[][] marks = {
+            {40, 20}, // Jane's marks: Math, Physics
+            {70, 60}, // Jon's marks: Math, Physics
+            {80, 75}  // Stewart's marks: Math, Physics
+        };
+
+        // Printing the marks
+        System.out.println("Jane's Math marks: " + marks[0][0]);
+        System.out.println("Jane's Physics marks: " + marks[0][1]);
+
+        System.out.println("Jon's Math marks: " + marks[1][0]);
+        System.out.println("Jon's Physics marks: " + marks[1][1]);
+
+        System.out.println("Stewart's Math marks: " + marks[2][0]);
+        System.out.println("Stewart's Physics marks: " + marks[2][1]);
+    }
+}
+
